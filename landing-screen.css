@@ -1,0 +1,23 @@
+
+.heading{
+    display: flex;
+    justify-content:space-between;
+    margin: 10px 20px 30px 20px;
+}
+.heading p{
+    font-family: "EB Garamond";
+    font-size: 19px;
+    font-weight: 460;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.title img{
+    height: 620px;
+}
+.title:hover{
+    opacity: 60%;
+}
