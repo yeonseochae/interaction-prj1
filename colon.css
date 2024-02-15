@@ -1,0 +1,36 @@
+body{
+    margin: 35px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+.heading img{
+    width: 820px;
+}
+.sub-title{
+    margin-top: 23px;
+}
+.sub-title p{
+    font-family: "EB Garamond";
+    font-size: 44px;
+    line-height: 1.5cm;
+}
+.story{
+    margin-top: 285px;
+    width: 56%;
+}
+.story p{
+    font-family: "EB Garamond";
+    font-size: 21px;
+}
+.next{
+    align-items: center;
+    justify-content: right;
+    margin-left: 1300px;
+    margin-top: 430px;
+    padding: 10px;
+}
+.next img{
+    width: 40px;
+    
+}
