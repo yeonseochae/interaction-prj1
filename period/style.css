@@ -15,6 +15,16 @@ body{
     font-size: 46px;
     line-height: 1.4cm;
 }
+#show-image{
+    font-size: 23px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff291;
+    color: #ed431c;
+    border-radius: 100px;
+    cursor: pointer;
+    border: solid 1.5px #309ae6;
+    height: 30px;
+}
 .story{
     margin-top: 205px;
     width: 56%;
@@ -22,6 +32,15 @@ body{
 .story p{
     font-family: "EB Garamond";
     font-size: 21px;
+}
+#show-image2{
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff291;
+    color: #ed431c;
+    border: solid 1.5px #309ae6;
+    border-radius: 100px;
+    cursor: pointer;
 }
 .next{
     align-items: center;

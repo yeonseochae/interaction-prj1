@@ -4,23 +4,80 @@
         <title>question-mark</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+        
+
     </head>
     <body>
        <div class="heading">
-        <img src="images/questionmark.png">
+          <img src="images/questionmark.png">
        </div>
+       <!-- subtitle -->
        <div class="sub-title">
-        <p>I never could bring myself to use <br>a question mark </p>
+          <p>I never could bring myself to use <br>a question mark 
+            <button class="show-image-button" data-image="image1">1</button>
+         </p> 
        </div>
+
+       <div id="image-popup">
+         <div id="image1" class="image-container1">
+            <button class="close-button" id="button1">&times; Close</button>
+            <img src="images/note1.png" alt="Popup Image">
+          </div>
+       </div>
+      <!-- story -->
        <div class="story">
         <p>
-            Of these the one but the first and the most the completely most uninteresting is the question mark. The question mark is alright when it is all alone when it is used as a brand on cattle or when it could be used in decoration but connected with writing it is completely entirely completely uninteresting. It is evident that is you ask a question you ask a question but anybody who can read at all knows when a question is a question as it is written in writing. Therefore I ask you therefore wherefore should one use the question mark. 
+            Of these the one but the first and the most the completely most uninteresting is the question mark. The question mark is alright when it is all alone when it is used as a brand on cattle or when it could be used in decoration but connected with writing it is completely entirely completely uninteresting. It is evident that is you ask a question you ask a question but anybody who can read at all knows when a question is a question as it is written in writing 
+            Therefore I ask you therefore wherefore should one use the question mark.  
+            <button class="show-image-button" data-image="image3">2</button>
         </p>
        </div>
-       <div class="next">
-        <img src="images/apostrophe.png">
+
+       <div id="image-popup3">
+         <div id="image3" class="image-container3">
+            <button class="close-button" id="button3">&times; Close</button>
+            <img src="images/note3.png" alt="Popup Image">
+          </div>
+
+      <!-- next -->
        </div>
+       <div class="next">
+         <a href="https://yeonseochae.github.io/interaction-prj1/">
+            <img src="images/question.png">
+         </a>
+       </div>
+
+<!-- Javascript -->
+       <script>
+                 const showImageButtons = document.querySelectorAll('.show-image-button');
+
+showImageButtons.forEach(button => {
+  button.addEventListener('click', function() {
+    const imageId = button.getAttribute('data-image');
+    const imageContainer = document.getElementById(imageId);
+    // Show the image container corresponding to the clicked button
+    imageContainer.style.display = 'block';
+
+    // Add event listener to close button
+    const closeButton = imageContainer.querySelector('.close-button');
+    closeButton.addEventListener('click', function() {
+      // Hide the image container when close button is clicked
+      imageContainer.style.display = 'none';
+    });
+  });
+});
+
+
+
+
+
+
+    
+         
+       
+         
+        </script>
     </body>
 </html>
