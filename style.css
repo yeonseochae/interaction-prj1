@@ -1,27 +1,22 @@
-.navigation{
+.heading{
     display: flex;
-    flex-direction: row;
-    margin: 280px 200px;
+    justify-content:space-between;
+    margin: 3px 20px 20px 20px;
+}
+.heading p{
+    font-family: "EB Garamond";
+    font-size: 19px;
+    font-weight: 460;
+}
+.title{
+    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;
-    }
-.question img{
-    width: 65px;
+    
 }
-.apostrophe img{
-    width: 80px;
+.title img{
+    height: 620px;
 }
-.period img{
-    width: 40px;
-}
-.semicolon img{
-    width: 31px;
-}
-.comma img{
-    width: 36px;
-}
-.question img:hover, .apostrophe img:hover, .period img:hover, .semicolon img:hover, .comma img:hover{
-    opacity: 50%;
-    transition-timing-function: ease;
-    transition: all .4s ease-in-out;
+.title img:hover{
+    opacity: 60%;
 }

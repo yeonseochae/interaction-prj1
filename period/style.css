@@ -15,15 +15,14 @@ body{
     font-size: 46px;
     line-height: 1.4cm;
 }
-#show-image{
-    font-size: 23px;
+.show-image-button{
+    font-size: 19px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fff291;
     color: #ed431c;
+    border: solid 1.5px #309ae6;
     border-radius: 100px;
     cursor: pointer;
-    border: solid 1.5px #309ae6;
-    height: 30px;
 }
 .story{
     margin-top: 205px;
@@ -33,14 +32,62 @@ body{
     font-family: "EB Garamond";
     font-size: 21px;
 }
-#show-image2{
-    font-size: 17px;
+/* Buttons */
+.image-container1 {
+    display: none; 
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-105px,42px);
+    z-index: 9999;
+  }
+.image-container2 {
+    display: none; 
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-525px,457px);
+    z-index: 9999;
+}
+.image-container3 {
+    display: none; 
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-300px,510px);
+    z-index: 9999;
+}
+#image-popup img{
+    width: 540px;
+  }
+#image-popup2 img{
+    width: 500px;
+}
+#image-popup3 img{
+    width: 370px;
+}
+.close-button{
     font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
     background-color: #fff291;
     color: #ed431c;
     border: solid 1.5px #309ae6;
     border-radius: 100px;
     cursor: pointer;
+    width: 70px;
+    position: absolute;
+}
+#button1{
+    transform: translate(470px,157px);
+}
+#button2{
+    transform: translate(388px,85px);
+}
+#button3{
+    transform: translate(300px,157px);
 }
 .next{
     align-items: center;
@@ -51,5 +98,4 @@ body{
 }
 .next img{
     width: 30px;
-    
 }

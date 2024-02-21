@@ -23,8 +23,8 @@ body{
     font-family: "EB Garamond";
     font-size: 21px;
 }
-#show-image2{
-    font-size: 17px;
+.show-image-button{
+    font-size: 19px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #fff291;
     color: #ed431c;
@@ -32,6 +32,48 @@ body{
     border-radius: 100px;
     cursor: pointer;
 }
+.image-container1 {
+    display: none; 
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-480px,538px);
+    z-index: 9999;
+  }
+.image-container2 {
+    display: none; 
+    margin-top: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(65px,593px);
+    z-index: 9999;
+}
+#image-popup img{
+    width: 230px;
+  }
+#image-popup2 img{
+    width: 550px;
+}
+.close-button{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: #fff291;
+    color: #ed431c;
+    border: solid 1.5px #309ae6;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 70px;
+    position: absolute;
+}
+#button1{
+    transform: translate(160px,150px);
+}
+#button2{
+    transform: translate(481px,120px);
+}
+
 .next{
     align-items: center;
     justify-content: right;
@@ -41,5 +83,4 @@ body{
 }
 .next img{
     width: 40px;
-    
 }

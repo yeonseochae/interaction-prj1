@@ -1,0 +1,27 @@
+.navigation{
+    display: flex;
+    flex-direction: row;
+    margin: 280px 200px;
+    align-items: center;
+    justify-content: space-between;
+    }
+.question img{
+    width: 65px;
+}
+.apostrophe img{
+    width: 80px;
+}
+.period img{
+    width: 40px;
+}
+.semicolon img{
+    width: 31px;
+}
+.comma img{
+    width: 36px;
+}
+.question img:hover, .apostrophe img:hover, .period img:hover, .semicolon img:hover, .comma img:hover{
+    opacity: 50%;
+    transition-timing-function: ease;
+    transition: all .4s ease-in-out;
+}

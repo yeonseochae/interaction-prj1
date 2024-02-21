@@ -46,11 +46,11 @@ body{
 .next{
     align-items: center;
     justify-content: right;
-    margin-left: 1300px;
-    margin-top: 430px;
+    margin-left: 1285px;
+    margin-top: 350px;
     padding: 10px;
 }
 .next img{
-    width: 40px;
+    width: 80px;
     
 }

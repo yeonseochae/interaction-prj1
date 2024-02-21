@@ -16,11 +16,50 @@
        </div>
        <div class="story">
         <p>
-            One does do without it, I do, I mostly always do, but I cannot deny that from time to time I feel myself having regrets <button id="show-image2">1</button> and from time to time I put it in to make the possessive case. I absolutely do not like it and leaving it out I feel no regret, there it is unnecessary and not ornamental but inside a word and its s well perhaps, perhaps it does appeal by its weakness <button id="show-image2">2</button> to your weakness. At least at any rate from time to time I do find myself letting it alone if it has come in and sometimes it has come in. I cannot positively deny but that I do from time to time let it come in. 
+            One does do without it, I do, I mostly always do, but I cannot deny that from time to time I feel myself having regrets 
+            <button class="show-image-button" data-image="image1">1</button>
+            and from time to time I put it in to make the possessive case. I absolutely do not like it and leaving it out I feel no regret, there it is unnecessary and not ornamental but inside a word and its s well perhaps, perhaps it does appeal by its weakness 
+            <button class="show-image-button" data-image="image2">2</button>
+            to your weakness. At least at any rate from time to time I do find myself letting it alone if it has come in and sometimes it has come in. I cannot positively deny but that I do from time to time let it come in. 
         </p>
        </div>
+
+       <div id="image-popup">
+        <div id="image1" class="image-container1">
+           <button class="close-button" id="button1">&times; Close</button>
+           <img src="images/note1.png" alt="Popup Image">
+         </div>
+      </div>
+      <div id="image-popup2">
+        <div id="image2" class="image-container2">
+           <button class="close-button" id="button2">&times; Close</button>
+           <img src="images/note2.png" alt="Popup Image">
+         </div>
+      </div>
        <div class="next">
-        <img src="images/comma.png">
-       </div>
+        <a href="https://yeonseochae.github.io/interaction-prj1/">
+           <img src="images/semicolon.png">
+        </a>
+      </div>
+      <!-- Javascript -->
+      <script>
+        const showImageButtons = document.querySelectorAll('.show-image-button');
+
+showImageButtons.forEach(button => {
+button.addEventListener('click', function() {
+const imageId = button.getAttribute('data-image');
+const imageContainer = document.getElementById(imageId);
+// Show the image container corresponding to the clicked button
+imageContainer.style.display = 'block';
+
+// Add event listener to close button
+const closeButton = imageContainer.querySelector('.close-button');
+closeButton.addEventListener('click', function() {
+// Hide the image container when close button is clicked
+imageContainer.style.display = 'none';
+});
+});
+}); 
+</script>
     </body>
 </html>

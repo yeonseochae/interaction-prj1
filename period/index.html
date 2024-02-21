@@ -11,16 +11,67 @@
        <div class="heading">
         <img src="images/periodletter.png">
        </div>
+
        <div class="sub-title">
-        <p>What had periods to do with it  <button id="show-image">1</button> </p>
-       </div>
-       <div class="story">
-        <p>
-            By the time I had written this poem about three years ago periods had come to have for me completely a life of their own. They could begin to act as they thought best and one might interrupt one’s writing with them that is not really interrupt one’s writing with them but one could come to stop arbitrarily stop at times in one’s writing and so they could be used and you could use them <button id="show-image2">2</button> Periods could come to exist in this way and they could come in this way to have a life of their own. They did not serve you in any servile way as commas and colons and semi-colons do. Yes you do feel what I mean. <button id="show-image2">3</button> 
+        <p>What had periods to do with it  
+            <button class="show-image-button" data-image="image1">1</button>
         </p>
        </div>
-       <div class="next">
-        <img src="images/semicolon.png">
+       
+       <div id="image-popup">
+        <div id="image1" class="image-container1">
+           <button class="close-button" id="button1">&times; Close</button>
+           <img src="images/note1.png" alt="Popup Image">
+         </div>
+      </div>
+
+    <!-- story -->
+       <div class="story">
+        <p>
+            By the time I had written this poem about three years ago periods had come to have for me completely a life of their own. They could begin to act as they thought best and one might interrupt one’s writing with them that is not really interrupt one’s writing with them but one could come to stop arbitrarily stop at times in one’s writing and so they could be used and you could use them 
+            <button class="show-image-button" data-image="image2">2</button>
+            Periods could come to exist in this way and they could come in this way to have a life of their own. They did not serve you in any servile way as commas and colons and semi-colons do. Yes you do feel what I mean. 
+            <button class="show-image-button" data-image="image3">3</button>
+        </p>
        </div>
+<!-- Button Images -->
+       <div id="image-popup2">
+        <div id="image2" class="image-container2">
+           <button class="close-button" id="button2">&times; Close</button>
+           <img src="images/note2.png" alt="Popup Image">
+         </div>
+      </div>
+      <div id="image-popup3">
+        <div id="image3" class="image-container3">
+           <button class="close-button" id="button3">&times; Close</button>
+           <img src="images/note3.png" alt="Popup Image">
+         </div>
+      </div>
+
+       <div class="next">
+        <a href="https://yeonseochae.github.io/interaction-prj1/">
+           <img src="images/semicolon.png">
+        </a>
+      </div>
+<!-- Javascript -->
+      <script>
+        const showImageButtons = document.querySelectorAll('.show-image-button');
+
+showImageButtons.forEach(button => {
+button.addEventListener('click', function() {
+const imageId = button.getAttribute('data-image');
+const imageContainer = document.getElementById(imageId);
+// Show the image container corresponding to the clicked button
+imageContainer.style.display = 'block';
+
+// Add event listener to close button
+const closeButton = imageContainer.querySelector('.close-button');
+closeButton.addEventListener('click', function() {
+// Hide the image container when close button is clicked
+imageContainer.style.display = 'none';
+});
+});
+}); 
+</script>
     </body>
 </html>
