@@ -83,3 +83,10 @@ body{
 .next img{
     width: 48px;
 }
+/* Responsive - phones screen */
+@media screen and (max-width:768px){
+    .heading img{
+        width: 1000px;
+        margin-top: 80px;
+    }
+}
