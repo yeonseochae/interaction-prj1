@@ -134,24 +134,20 @@ body{
         border: solid 2.5px #309ae6;
     }
     .image-container1 {
-        transform: translate(-295px,225px);
-      }
-      .image-container2 {
-        transform: translate(160px,920px);
+        transform: translate(75px,265px);
       }
       .image-container3 {
-        transform: translate(245px,1055px);
+        transform: translate(50px,1170px);
       }
+    
    
     #image-popup img{
-        width: 630px;
-      }
-    #image-popup2 img{
         width: 560px;
-    }
+      }
     #image-popup3 img{
-        width: 400px;
+        width: 280px;
     }
+    
    
     .close-button{
         font-size: 26px;
@@ -161,13 +157,10 @@ body{
         border: solid 2.5px #309ae6;
     }
     #button1{
-        transform: translate(505px,188px);
-    }
-    #button2{
-        transform: translate(390px,95px);
+        transform: translate(440px,108px);
     }
     #button3{
-        transform: translate(270px,175px);
+        transform: translate(155px,140px);
     }
   
 }
