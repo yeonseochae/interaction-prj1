@@ -109,6 +109,37 @@ body{
     .next{
        margin-left: 1020px;
     }
+    .show-image-button{
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 100px;
+        border: solid 2.5px #309ae6;
+    }
+    .image-container1 {
+        transform: translate(-130px,15px);
+      }
+      .image-container2 {
+        transform: translate(310px,595px);
+      }
+    #image-popup img{
+        width: 630px;
+      }
+    #image-popup2 img{
+        width: 630px;
+    }
+    .close-button{
+        font-size: 26px;
+        font-weight: bold;
+        border-radius: 100px;
+        width: 120px;
+        border: solid 2.5px #309ae6;
+    }
+    #button1{
+        transform: translate(505px,118px);
+    }
+    #button2{
+        transform: translate(503px,175px);
+    }
     
 
 }
