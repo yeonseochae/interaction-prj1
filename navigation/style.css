@@ -25,3 +25,26 @@
     transition-timing-function: ease;
     transition: all .4s ease-in-out;
 }
+/* Responsive - phones screen */
+@media screen and (max-width:768px){
+    .navigation{
+        flex-direction: column;
+        height: 60vh;
+    }
+    .question img{
+        width: 58px;
+    }
+    .apostrophe img{
+        width: 70px;
+    }
+    .period img{
+        width: 35px;
+    }
+    .semicolon img{
+        width: 28px;
+    }
+    .comma img{
+        width: 30px;
+    }
+   
+ }
