@@ -23,7 +23,7 @@
 /* Responsive - phones screen */
 @media screen and (max-width:768px){
    .title img{
-    margin-top: 280px;
+    margin-top: 210px;
     height: 650px;
    }
    .heading p{
