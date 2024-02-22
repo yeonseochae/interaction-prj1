@@ -12,18 +12,62 @@
         <img src="images/commaletter.png">
        </div>
        <div class="sub-title">
-        <p>I have refused <button id="show-image">1</button> them so often and left the out so much.</p>
+        <p>I have refused 
+            <button class="show-image-button" data-image="image1">1</button>
+            them so often and left the out so much.</p>
        </div>
        <div class="story">
         <p>
-            I have come finally to be indifferent to them <button id="show-image2">2</button> . I do not now care whether you put them in or not but for a long time I felt very definitely about them and would have nothing to do with them. As I say commas are servile and they have no life of their own, and their use is not a use, it is a way of replacing one’s own interest and I do decidedly like to like my own interest my own interest in what I am doing. A comma by helping you along holding your coat for you and putting on your shoes keeps you from living your life as actively as you should lead it and to me for many years and I still do feel that way about it only now I do not pay as much attention to them, the use of them was positively degrading. <button id="show-image2">3</button> 
+            I have come finally to be indifferent to them 
+            <button class="show-image-button" data-image="image2">2</button>. 
+            I do not now care whether you put them in or not but for a long time I felt very definitely about them and would have nothing to do with them. As I say commas are servile and they have no life of their own, and their use is not a use, it is a way of replacing one’s own interest and I do decidedly like to like my own interest my own interest in what I am doing. A comma by helping you along holding your coat for you and putting on your shoes keeps you from living your life as actively as you should lead it and to me for many years and I still do feel that way about it only now I do not pay as much attention to them, the use of them was positively degrading. 
+            <button class="show-image-button" data-image="image3">3</button>
         </p>
        </div>
+
+       <!-- Images that pop up when button is clicked -->
+       <div id="image-popup">
+        <div id="image1" class="image-container1">
+           <button class="close-button" id="button1">&times; Close</button>
+           <img src="images/note1.png" alt="Popup Image">
+         </div>
+      </div>
+      <div id="image-popup2">
+        <div id="image2" class="image-container2">
+           <button class="close-button" id="button2">&times; Close</button>
+           <img src="images/note2.png" alt="Popup Image">
+         </div>
+      </div>
+      <div id="image-popup3">
+        <div id="image3" class="image-container3">
+           <button class="close-button" id="button3">&times; Close</button>
+           <img src="images/note3.png" alt="Popup Image">
+         </div>
+      </div>
 
        <div class="next">
         <a href="https://yeonseochae.github.io/interaction-prj1/">
            <img src="images/home.png">
         </a>
       </div>
+      <script>
+        const showImageButtons = document.querySelectorAll('.show-image-button');
+
+showImageButtons.forEach(button => {
+button.addEventListener('click', function() {
+const imageId = button.getAttribute('data-image');
+const imageContainer = document.getElementById(imageId);
+// Show the image container corresponding to the clicked button
+imageContainer.style.display = 'block';
+
+// Add event listener to close button
+const closeButton = imageContainer.querySelector('.close-button');
+closeButton.addEventListener('click', function() {
+// Hide the image container when close button is clicked
+imageContainer.style.display = 'none';
+});
+});
+}); 
+</script>
     </body>
 </html>
