@@ -84,3 +84,69 @@ body{
 .next img{
     width: 40px;
 }
+/* Responsive - phones screen */
+@media screen and (max-width:768px){
+    .heading img{
+        width: 960px;
+        margin-top: 80px;
+    }
+    .sub-title {
+        margin-top: 150px;
+        width: 1100px;
+    }
+    .sub-title p{
+        font-family: "EB Garamond";
+        font-size: 50px;
+        line-height: 2cm;
+    }
+    .story{
+        width: 900px;
+        margin-top: 400px;
+    }
+    .story p{
+        font-size: 33px;
+    }
+    .next{
+       margin-left: 970px;
+    }
+    .next img{
+        width: 40px;
+    }
+    .show-image-button{
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 100px;
+        border: solid 2.5px #309ae6;
+    }
+    .image-container1 {
+        transform: translate(315px,575px);
+      }
+      .image-container2 {
+        transform: translate(-130px,820px);
+      }
+    
+   
+    #image-popup img{
+        width: 270px;
+      }
+    #image-popup2 img{
+        width: 740px;
+    }
+   
+   
+    .close-button{
+        font-size: 26px;
+        font-weight: bold;
+        border-radius: 100px;
+        width: 120px;
+        border: solid 2.5px #309ae6;
+    }
+    #button1{
+        transform: translate(155px,178px);
+    }
+    #button2{
+        transform: translate(625px,158px);
+    }
+    
+  
+}
